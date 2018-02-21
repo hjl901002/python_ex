@@ -1,6 +1,3 @@
-#!/usr/bin/python
-# -*- coding:utf-8 -*-
-
 class Parent(object):
 
     def override(self):
@@ -18,8 +15,8 @@ class Child(Parent):
         print "CHILD override()"
 
     def altered(self):
-        print "CHILD, BEFOR PARENT altered()"
-        super(Child, self).altered() 
+        print "CHILD, BEFORE PARENT altered()"
+        super(Child, self).altered()
         print "CHILD, AFTER PARENT altered()"
 
 dad = Parent()
